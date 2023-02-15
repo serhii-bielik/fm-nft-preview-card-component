@@ -15,14 +15,143 @@
   --dark-blue-main: #0d192b;
   --dark-blue-card: #14253d;
   --dark-blue-line: #2f415b;
+  --dark-blue-shadow: #0c1729;
 }
 
 body {
   font-size: 18px;
   font-family: 'Outfit', sans-serif;
   font-weight: 300;
+  color: var(--soft-blue);
+  background-color: var(--dark-blue-main);
 }
 
 img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--white);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--cyan);
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* NFT component area */
+
+.nft {
+  width: 85%;
+  max-width: 350px;
+  padding: 1.5rem;
+  background-color: var(--dark-blue-card);
+  border-radius: 1rem;
+  box-shadow: var(--dark-blue-shadow) 10px 20px 15px 10px;
+}
+
+/* NFT Image and hover effect */
+
+.nft-image-container {
+  position: relative;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.nft__image-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
   width: 100%;
+  opacity: 0;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.nft__image-overlay-background {
+  background-color: var(--cyan);
+}
+.nft__image-overlay-icon {
+  transform: scale(0.2);
+}
+
+.nft-image-container:hover .nft__image-overlay {
+  opacity: 0.5;
+}
+.nft-image-container:hover .nft__image-overlay-icon {
+  opacity: 1;
+}
+
+/* END - NFT Image and hover effect */
+
+.nft__title {
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.nft__description {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Price area */
+
+.nft__price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--dark-blue-line);
+}
+
+.nft__price-icon-clock {
+  width: 1.1rem;
+  height: 1.1rem;  
+  margin-right: 0.5rem;
+  
+}
+.nft__price-icon-eth {
+  width: 0.7rem;
+  margin-right: 0.5rem;
+}
+
+.nft__price-amount {
+  display: flex;
+  color: var(--cyan);
+}
+
+.nft__price-expired {
+  display: flex;
+}
+
+/* Author area */
+.nft__author {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  gap: 1rem;
+}
+
+.nft__author-avatar {
+  width: 2rem;
+  border-radius: 50%;
+  border: 1px solid var(--white);
 }

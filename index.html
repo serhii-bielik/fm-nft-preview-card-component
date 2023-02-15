@@ -15,32 +15,43 @@
   <body>
     <main class="container">
       <div class="nft">
-        <div class="nft__image">
+        <div class="nft-image-container">
           <img src="./images/image-equilibrium.jpg" alt="Equilibrium #3429" />
+          <div class="nft__image-overlay nft__image-overlay-background"></div>
+          <img
+            src="./images/icon-view.svg"
+            class="nft__image-overlay nft__image-overlay-icon"
+            alt=""
+          />
         </div>
-        <div class="nft__title">Equilibrium #3429</div>
+        <div class="nft__title"><a href="#3429">Equilibrium #3429</a></div>
         <p class="nft__description">
           Our Equilibrium collection promotes balance and calm.
         </p>
-      </div>
-      <div class="nft__price">
-        <div class="nft__price-amount">
-          <img
-            src="./images/icon-ethereum.svg"
-            class="nft__price-icon"
-            alt=""
-          />0.041 ETH
+        <div class="nft__price">
+          <div class="nft__price-amount">
+            <img
+              src="./images/icon-ethereum.svg"
+              class="nft__price-icon-eth"
+              alt=""
+            />0.041 ETH
+          </div>
+          <div class="nft__price-expired">
+            <img
+              src="./images/icon-clock.svg"
+              class="nft__price-icon-clock"
+              alt=""
+            />3 days left
+          </div>
         </div>
-        <div class="nft__price-expired">
-          <img src="./images/icon-clock.svg" class="nft__price-icon" alt="" />3
-          days left
+        <div class="nft__author">
+          <div class="nft__author-avatar">
+            <img src="./images/image-avatar.png" alt="Jules Wyvern" />
+          </div>
+          <div class="nft__author-name">
+            Creation of <a href="#jules-wyvern">Jules Wyvern</a>
+          </div>
         </div>
-      </div>
-      <div class="nft__author">
-        <div class="nft__author-avatar">
-          <img src="./images/image-avatar.png" alt="Jules Wyvern" />
-        </div>
-        <div class="nft__author-name">Creation of Jules Wyvern</div>
       </div>
     </main>
   </body>
