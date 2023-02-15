@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: #ffffff;
+  --soft-blue: #8bacda;
+  --cyan: #00fff7;
+  --dark-blue-main: #0d192b;
+  --dark-blue-card: #14253d;
+  --dark-blue-line: #2f415b;
+}
+
+body {
+  font-size: 18px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 300;
+}
+
+img {
+  width: 100%;
+}
