@@ -132,6 +132,7 @@ a:hover {
 .nft__price-amount {
   display: flex;
   color: var(--cyan);
+  font-weight: 700;
 }
 
 .nft__price-expired {
