@@ -12,6 +12,7 @@
   --white: #ffffff;
   --soft-blue: #8bacda;
   --cyan: #00fff7;
+  --cyan-transparent: rgba(0, 255, 247, 0.5);
   --dark-blue-main: #0d192b;
   --dark-blue-card: #14253d;
   --dark-blue-line: #2f415b;
@@ -71,6 +72,9 @@ a:hover {
 }
 
 .nft__image-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -81,19 +85,10 @@ a:hover {
   opacity: 0;
   transition: 0.3s ease;
   cursor: pointer;
-}
-
-.nft__image-overlay-background {
-  background-color: var(--cyan);
-}
-.nft__image-overlay-icon {
-  transform: scale(0.2);
+  background-color: var(--cyan-transparent);
 }
 
 .nft-image-container:hover .nft__image-overlay {
-  opacity: 0.5;
-}
-.nft-image-container:hover .nft__image-overlay-icon {
   opacity: 1;
 }
 
